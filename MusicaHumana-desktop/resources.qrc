@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/img">
+        <file alias="cuore.png">img-volto/cuore.png</file>
+        <file alias="diamante.png">img-volto/diamante.png</file>
+        <file alias="ovale.png">img-volto/ovale.png</file>
+        <file alias="quadrato.png">img-volto/quadrato.png</file>
+        <file alias="rettangolare.png">img-volto/rettangolare.png</file>
+        <file alias="rotondo.png">img-volto/rotondo.png</file>
+        <file alias="triangolare.png">img-volto/triangolare.png</file>
+    </qresource>
+</RCC>

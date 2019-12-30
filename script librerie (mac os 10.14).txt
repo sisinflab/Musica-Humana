@@ -1,0 +1,147 @@
+
+libavcodec
+
+install_name_tool -change /usr/local/Cellar/ffmpeg/4.2.1_2/lib/libswresample.3.dylib @executable_path/../Frameworks/libswresample.3.dylib MusicaHumana_12_4.app/Contents/Frameworks/libavcodec.58.dylib; 
+
+install_name_tool -change /usr/local/Cellar/ffmpeg/4.2.1_2/lib/libavutil.56.dylib @executable_path/../Frameworks/libavutil.56.dylib MusicaHumana_12_4.app/Contents/Frameworks/libavcodec.58.dylib; 
+
+
+libavformat
+
+install_name_tool -change /usr/local/Cellar/ffmpeg/4.2.1_2/lib/libavcodec.58.dylib @executable_path/../Frameworks/libavcodec.58.dylib MusicaHumana_12_4.app/Contents/Frameworks/libavformat.58.dylib; 
+
+install_name_tool -change /usr/local/Cellar/ffmpeg/4.2.1_2/lib/libswresample.3.dylib @executable_path/../Frameworks/libswresample.3.dylib MusicaHumana_12_4.app/Contents/Frameworks/libavformat.58.dylib; 
+
+install_name_tool -change /usr/local/Cellar/ffmpeg/4.2.1_2/lib/libavutil.56.dylib @executable_path/../Frameworks/libavutil.56.dylib MusicaHumana_12_4.app/Contents/Frameworks/libavformat.58.dylib; 
+
+
+libavresample
+
+install_name_tool -change /usr/local/Cellar/ffmpeg/4.2.1_2/lib/libavutil.56.dylib @executable_path/../Frameworks/libavutil.56.dylib MusicaHumana_12_4.app/Contents/Frameworks/libavresample.4.dylib; 
+
+libhogweed
+
+install_name_tool -change /usr/local/Cellar/nettle/3.4.1/lib/libnettle.6.dylib @executable_path/../Frameworks/libnettle.6.dylib MusicaHumana_12_4.app/Contents/Frameworks/libhogweed.4.dylib; 
+
+
+libswresample
+
+install_name_tool -change /usr/local/Cellar/ffmpeg/4.2.1_2/lib/libavutil.56.dylib @executable_path/../Frameworks/libavutil.56.dylib MusicaHumana_12_4.app/Contents/Frameworks/libswresample.3.dylib; 
+
+libswscale
+
+install_name_tool -change /usr/local/Cellar/ffmpeg/4.2.1_2/lib/libavutil.56.dylib @executable_path/../Frameworks/libavutil.56.dylib MusicaHumana_12_4.app/Contents/Frameworks/libswscale.5.dylib; 
+
+
+
+Elenco librerie e comandi otool su ogni libreria
+
+
+QtCore.framework/               libavcodec.58.dylib             libidn2.0.dylib                 libopencv_features2d.3.4.dylib  libopencv_stitching.2.4.dylib   libswscale.5.dylib
+QtDBus.framework/               libavformat.58.dylib            libintl.8.dylib                 libopencv_flann.2.4.dylib       libopencv_superres.2.4.dylib    libtasn1.6.dylib
+QtGui.framework/                libavresample.4.dylib           libjpeg.9.dylib                 libopencv_flann.3.4.dylib       libopencv_video.2.4.dylib       libtbb.dylib
+QtNetwork.framework/            libavutil.56.dylib              liblzma.5.dylib                 libopencv_gpu.2.4.dylib         libopencv_videoio.3.4.dylib     libtheoradec.1.dylib
+QtPrintSupport.framework/       libbluray.2.dylib               libmp3lame.0.dylib              libopencv_highgui.2.4.dylib     libopencv_videostab.2.4.dylib   libtheoraenc.1.dylib
+QtQml.framework/                libcrypto.1.1.dylib             libnettle.6.dylib               libopencv_highgui.3.4.dylib     libopenjp2.7.dylib              libtiff.5.dylib
+QtQuick.framework/              libffi.6.dylib                  libogg.0.dylib                  libopencv_imgcodecs.3.4.dylib   libopus.0.dylib                 libunistring.2.dylib
+QtSvg.framework/                libflandmark_shared.dylib       libopenblasp-r0.3.7.dylib       libopencv_imgproc.2.4.dylib     libp11-kit.0.dylib              libvorbis.0.dylib
+QtVirtualKeyboard.framework/    libfontconfig.1.dylib           libopencore-amrnb.0.dylib       libopencv_imgproc.3.4.dylib     libpng16.16.dylib               libvorbisenc.2.dylib
+QtWidgets.framework/            libfreetype.6.dylib             libopencore-amrwb.0.dylib       libopencv_legacy.2.4.dylib      libquadmath.0.dylib             libx264.155.dylib
+libHalf.24.dylib                libgcc_s.1.dylib                libopencv_calib3d.2.4.dylib     libopencv_ml.2.4.dylib          librtmp.1.dylib                 libx265.179.dylib
+libIex-2_3.24.dylib             libgfortran.5.dylib             libopencv_calib3d.3.4.dylib     libopencv_nonfree.2.4.dylib     libsnappy.1.dylib               
+libIexMath-2_3.24.dylib         libgmp.10.dylib                 libopencv_contrib.2.4.dylib     libopencv_objdetect.2.4.dylib   libsoxr.0.dylib                 
+libIlmImf-2_3.24.dylib          libgnutls.30.dylib              libopencv_core.2.4.dylib        libopencv_objdetect.3.4.dylib   libspeex.1.dylib                
+libIlmThread-2_3.24.dylib       libgomp.1.dylib                 libopencv_core.3.4.dylib        libopencv_ocl.2.4.dylib         libssl.1.1.dylib                
+libImath-2_3.24.dylib           libhogweed.4.dylib              libopencv_features2d.2.4.dylib  libopencv_photo.2.4.dylib       libswresample.3.dylib     
+
+cd /Users/giuseppe/Desktop/scaricate da drive/4 dicembre
+
+
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libHalf.24.dylib;           
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libIex-2_3.24.dylib;        
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libIexMath-2_3.24.dylib;    
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libIlmImf-2_3.24.dylib;     
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libIlmThread-2_3.24.dylib;  
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libImath-2_3.24.dylib;      
+
+
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libavcodec.58.dylib;       
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libavformat.58.dylib;      
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libavresample.4.dylib;     
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libavutil.56.dylib;        
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libbluray.2.dylib;       
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libcrypto.1.1.dylib;       
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libffi.6.dylib;            
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libflandmark_shared.dylib; 
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libfontconfig.1.dylib;
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libfreetype.6.dylib;    
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libgcc_s.1.dylib;          
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libgfortran.5.dylib;       
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libgmp.10.dylib;           
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libgnutls.30.dylib;        
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libgomp.1.dylib;           
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libhogweed.4.dylib;        
+
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libidn2.0.dylib;               
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libintl.8.dylib;               
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libjpeg.9.dylib;               
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/liblzma.5.dylib;               
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libmp3lame.0.dylib;            
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libnettle.6.dylib;             
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libogg.0.dylib;                
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libopenblasp-r0.3.7.dylib;     
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libopencore-amrnb.0.dylib;    
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libopencore-amrwb.0.dylib;   
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libopencv_calib3d.2.4.dylib;   
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libopencv_calib3d.3.4.dylib;  
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libopencv_contrib.2.4.dylib; 
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libopencv_core.2.4.dylib;      
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libopencv_core.3.4.dylib;      
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libopencv_features2d.2.4.dylib;
+
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libopencv_features2d.3.4.dylib; 
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libopencv_flann.2.4.dylib;      
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libopencv_flann.3.4.dylib;      
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libopencv_gpu.2.4.dylib;        
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libopencv_highgui.2.4.dylib;    
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libopencv_highgui.3.4.dylib;    
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libopencv_imgcodecs.3.4.dylib;  
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libopencv_imgproc.2.4.dylib;    
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libopencv_imgproc.3.4.dylib;    
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libopencv_legacy.2.4.dylib;     
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libopencv_ml.2.4.dylib;         
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libopencv_nonfree.2.4.dylib;    
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libopencv_objdetect.2.4.dylib;  
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libopencv_objdetect.3.4.dylib;  
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libopencv_ocl.2.4.dylib;        
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libopencv_photo.2.4.dylib;      
+
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libopencv_stitching.2.4.dylib; 
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libopencv_superres.2.4.dylib;  
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libopencv_video.2.4.dylib;     
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libopencv_videoio.3.4.dylib;   
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libopencv_videostab.2.4.dylib; 
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libopenjp2.7.dylib;            
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libopus.0.dylib;               
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libp11-kit.0.dylib;            
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libpng16.16.dylib;             
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libquadmath.0.dylib;           
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/librtmp.1.dylib;               
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libsnappy.1.dylib;             
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libsoxr.0.dylib;               
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libspeex.1.dylib;              
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libssl.1.1.dylib;              
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libswresample.3.dylib;     
+
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libswscale.5.dylib;
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libtasn1.6.dylib;
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libtbb.dylib;
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libtheoradec.1.dylib;
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libtheoraenc.1.dylib;
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libtiff.5.dylib;
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libunistring.2.dylib;
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libvorbis.0.dylib;
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libvorbisenc.2.dylib;
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libx264.155.dylib;
+otool -L MusicaHumana_12_4.app/Contents/Frameworks/libx265.179.dylib;
+

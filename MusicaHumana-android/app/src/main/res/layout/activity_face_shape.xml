@@ -1,0 +1,150 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/GridLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    tools:context="it.poliba.musicahumana.FaceShapeActivity">
+
+    <ImageButton
+        android:id="@+id/imageButtonOvale"
+        android:onClick="voltoOvale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_gravity="center"
+        android:layout_row="0"
+        android:src="@drawable/button_ovale" />
+
+    <TextView
+        android:id="@+id/textViewOvale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_row="1"
+        android:text="@string/volto_ovale" />
+
+    <ImageButton
+        android:id="@+id/imageButtonRotondo"
+        android:onClick="voltoRotondo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_gravity="center"
+        android:layout_row="0"
+        android:src="@drawable/button_rotondo" />
+
+    <TextView
+        android:id="@+id/textViewRotondo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_row="1"
+        android:text="@string/volto_rotondo" />
+
+    <ImageButton
+        android:id="@+id/imageButtonQuadrato"
+        android:onClick="voltoQuadrato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="2"
+        android:layout_gravity="center"
+        android:layout_row="0"
+        android:src="@drawable/button_quadrato" />
+
+    <TextView
+        android:id="@+id/textViewQuadrato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="2"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_row="1"
+        android:text="@string/volto_quadrato" />
+
+    <ImageButton
+        android:id="@+id/imageButtonRettangolare"
+        android:onClick="voltoRettangolare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_gravity="center"
+        android:layout_row="2"
+        android:src="@drawable/button_rettangolare" />
+
+    <TextView
+        android:id="@+id/textViewRettangolare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_row="3"
+        android:text="@string/volto_rettangolare" />
+
+    <ImageButton
+        android:id="@+id/imageButtonTriangolare"
+        android:onClick="voltoTriangolare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_gravity="center"
+        android:layout_row="2"
+        android:src="@drawable/button_triangolare" />
+
+    <TextView
+        android:id="@+id/textViewTriangolare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_row="3"
+        android:text="@string/volto_triangolare" />
+
+    <ImageButton
+        android:id="@+id/imageButtonCuore"
+        android:onClick="voltoCuore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="2"
+        android:layout_gravity="center"
+        android:layout_row="2"
+        android:src="@drawable/button_cuore" />
+
+    <TextView
+        android:id="@+id/textViewCuore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="2"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_row="3"
+        android:text="@string/volto_cuore" />
+
+    <ImageButton
+        android:id="@+id/imageButtonDiamante"
+        android:onClick="voltoDiamante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_gravity="center"
+        android:layout_row="4"
+        android:src="@drawable/button_diamante" />
+
+    <TextView
+        android:id="@+id/textViewDiamante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_gravity="center"
+        android:layout_row="5"
+        android:text="@string/volto_diamante" />
+
+</GridLayout>

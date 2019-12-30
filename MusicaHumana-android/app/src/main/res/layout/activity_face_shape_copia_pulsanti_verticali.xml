@@ -1,0 +1,160 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="it.poliba.musicahumana.FaceShapeActivity"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButtonOvale"
+                android:layout_column="0"
+                android:src="@drawable/button_ovale"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/volto_ovale"
+                android:id="@+id/textViewOvale"
+                android:layout_column="1"
+                android:layout_gravity="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButtonRotondo"
+                android:layout_column="0"
+                android:src="@drawable/button_rotondo"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/volto_rotondo"
+                android:id="@+id/textViewRotondo"
+                android:layout_column="1"
+                android:layout_gravity="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButtonQuadrato"
+                android:layout_column="0"
+                android:src="@drawable/button_quadrato"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/volto_quadrato"
+                android:id="@+id/textViewQuadrato"
+                android:layout_column="1"
+                android:layout_gravity="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButtonRettangolare"
+                android:layout_column="0"
+                android:src="@drawable/button_rettangolare"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/volto_rettangolare"
+                android:id="@+id/textViewRettangolare"
+                android:layout_column="1"
+                android:layout_gravity="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButtonTriangolare"
+                android:layout_column="0"
+                android:src="@drawable/button_triangolare"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/volto_triangolare"
+                android:id="@+id/textViewTriangolare"
+                android:layout_column="1"
+                android:layout_gravity="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButtonCuore"
+                android:layout_column="0"
+                android:src="@drawable/button_cuore"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/volto_cuore"
+                android:id="@+id/textViewCuore"
+                android:layout_column="1"
+                android:layout_gravity="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButtonDiamante"
+                android:layout_column="0"
+                android:src="@drawable/button_diamante"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/volto_diamante"
+                android:id="@+id/textViewDiamante"
+                android:layout_column="1"
+                android:layout_gravity="center" />
+        </TableRow>
+
+    </TableLayout>
+
+
+</ScrollView>

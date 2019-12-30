@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MusicaHumana</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_face_shape">Seleziona il volto</string>
+
+    <string name="volto_ovale">Volto Ovale</string>
+    <string name="volto_cuore">Volto a Cuore</string>
+    <string name="volto_diamante">Volto a Diamante</string>
+    <string name="volto_quadrato">Volto Quadrato</string>
+    <string name="volto_rettangolare">Volto Rettangolare</string>
+    <string name="volto_rotondo">Volto Rotondo</string>
+    <string name="volto_triangolare">Volto Triangolare</string>
+</resources>
